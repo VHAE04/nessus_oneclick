@@ -23,7 +23,7 @@ rm update.sh
 
 docker exec -it ramisec_nessus /bin/bash /nessus/update.sh
 
-
+clear
 echo -e "\n\033[1;31m \033[0m"
 
 echo -e "  \033[1;31m██   ██ ███████ ██   ██     ██    ██ ██   ██  █████  ███████                         \033[0m"
