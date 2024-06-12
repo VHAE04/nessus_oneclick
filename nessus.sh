@@ -1,19 +1,19 @@
 #!/bin/bash
 
-docker run -itd --name=ramisec_nessus -p 8834:8834 ramisec/nessus
+docker run -itd --name=vhae04_nessus -p 8834:8834 vhae044/nessus
 
 wget https://github.com/VHAE04/nessus_oneclick/raw/main/admin.zip
 
 wget https://github.com/VHAE04/nessus_oneclick/raw/main/update.sh
 
 
-docker exec -it ramisec_nessus /bin/bash -c "rm /nessus/update.sh"
+docker exec -it vhae04_nessus /bin/bash -c "rm /nessus/update.sh"
 
-docker cp update.sh ramisec_nessus:/nessus/
+docker cp update.sh vhae04_nessus:/nessus/
 
 unzip admin.zip
 
-docker cp admin ramisec_nessus:/opt/nessus/var/nessus/users/
+docker cp admin vhae04_nessus:/opt/nessus/var/nessus/users/
 
 rm admin.zip
 
@@ -21,7 +21,7 @@ rm -r admin
 
 rm update.sh
 
-docker exec -it ramisec_nessus /bin/bash /nessus/update.sh
+docker exec -it vhae04_nessus /bin/bash /nessus/update.sh
 
 clear
 echo -e "\n\033[1;31m \033[0m"
