@@ -1,8 +1,7 @@
 
 「 account day heh >< 」
 
-username: vhae04@gmail.com
-
+username: admin
 password: Vhae@04
 
 Host: https://127.0.0.1:8834 
