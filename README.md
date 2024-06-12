@@ -1,3 +1,4 @@
+luu y run voi quyen root
 
 「 account day heh >< 」
 
