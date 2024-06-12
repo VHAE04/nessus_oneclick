@@ -1,5 +1,5 @@
-luu y run voi quyen root
-
+linux luu y run voi quyen root
+window anh em tai mobaxteam ve chay la ngon lanh nhe
 「 account day heh >< 」
 
 username: admin
